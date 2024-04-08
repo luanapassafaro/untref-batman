@@ -73,7 +73,7 @@ section {
     margin-left: 19px;
 }
 
-.year-list::after { 
+.year-list::after {
     content: "";
     display: block;
     height: 0;
@@ -87,7 +87,6 @@ section {
 }
 
 .year-list > dd {
-    margin-left: 0;
     float: left;
     margin-bottom: 0.5em;
 }
