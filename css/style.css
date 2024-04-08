@@ -1,15 +1,27 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    height: 100vh;
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     margin: 0 auto;
     font-family: 'Times New Roman', Times, serif;
     font-size: 15px;
+    line-height: 1.3em;
 }
 
 header {
     text-align: center;
+}
+
+header img {
     padding: 21px 0;
 }
 
@@ -19,19 +31,19 @@ h1, h2 {
     letter-spacing: .25em;
     line-height: 30px;
     font-weight: bold;
+    margin: 0;
 }
 
 h1 {
     font-size: 35px;
-    text-align: center;
     padding: 15px;
-    margin: 0 0 128px;
 }
 
 h2 {
     font-size: 20px;
     padding-left: .7em;
     line-height: 30px;
+    margin-bottom: 10px;
 }
 
 footer {
@@ -45,14 +57,11 @@ footer {
     text-align: center;
     font-weight: bold;
     font-size: 20px;
+    margin-top: auto;
 }
 
 section {
-    margin-bottom: 35px;
-}
-
-li {
-    margin-bottom: 10px;
+    margin: 35px 0;
 }
 
 .label {
@@ -60,10 +69,30 @@ li {
     font-weight: bold;
 }
 
-dl {
+.year-list {
     margin-left: 19px;
 }
 
-dt {
+.year-list::after { 
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.year-list > dt {
     font-weight: bold;
+    float: left;
+    clear: left;
+}
+
+.year-list > dd {
+    margin-left: 0;
+    float: left;
+    margin-bottom: 0.5em;
+}
+
+.year-list > dd ul {
+    list-style-type: none;
+    padding-left: 0.5em;
 }
