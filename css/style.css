@@ -32,6 +32,7 @@ h1, h2 {
     line-height: 30px;
     font-weight: bold;
     margin: 0;
+    text-transform: uppercase;
 }
 
 h1 {
@@ -44,6 +45,12 @@ h2 {
     padding-left: .7em;
     line-height: 30px;
     margin-bottom: 10px;
+    text-align: left;
+}
+
+p {
+    padding-left: 1em;
+    margin-bottom: 8px;
 }
 
 footer {
@@ -62,6 +69,10 @@ footer {
 
 section {
     margin: 35px 0;
+}
+
+.center {
+    text-align: center;
 }
 
 .label {
@@ -94,4 +105,9 @@ section {
 .year-list > dd ul {
     list-style-type: none;
     padding-left: 0.5em;
+}
+
+iframe {
+    width: 100%;
+    max-width: 800px;
 }
